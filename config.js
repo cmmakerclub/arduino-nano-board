@@ -6,7 +6,7 @@ module.exports = {
     author : 'makerasia',
     website : 'http://www.arduino.cc',
     email : 'makerasia@gmail.com',
-    git : 'https://github.com/cmmakerclub/kbide-arduino-nano-board',    
+    git : 'https://github.com/cmmakerclub/arduino-nano-board',    
     image : '/static/display.jpg',
     version : '1.0.0',
 };
