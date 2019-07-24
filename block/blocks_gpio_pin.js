@@ -1,6 +1,82 @@
 module.exports = function(Blockly) {
   'use strict';
 
+  Blockly.Blocks['gpio_digital'] = {
+    init: function() {
+      this.appendDummyInput()
+          .appendField("digital")
+          .appendField(new Blockly.FieldDropdown([
+            ["D2","2"], 
+            ["D3","3"], 
+            ["D4","4"], 
+            ["D5","5"],
+            ["D6","6"], 
+            ["D7","7"],
+            ["D8","8"], 
+            ["D9","9"],
+            ["D10","10"],
+            ["D11","11"],
+            ["D12","12"],
+            ["D13","13"]]), 
+            "PIN");
+      this.setOutput(true, "Number");
+      this.setColour(20);
+      this.setTooltip("");
+      this.setHelpUrl("");
+    }
+  };
+
+  Blockly.Blocks['gpio_analog'] = {
+    init: function() {
+      this.appendDummyInput()
+          .appendField("analog")
+          .appendField(new Blockly.FieldDropdown([
+            ["A0","A0"], 
+            ["A1","A1"], 
+            ["A2","A2"], 
+            ["A3","A3"],
+            ["A4","A4"], 
+            ["A5","A5"]]), 
+            "PIN");
+       this.setOutput(true, "Number");
+      this.setColour(20);
+      this.setTooltip("");
+      this.setHelpUrl("");
+    }
+  };
+
+  Blockly.Blocks['gpio_i2c'] = {
+    init: function() {
+      this.appendDummyInput()
+          .appendField("I2C")
+          .appendField(new Blockly.FieldDropdown([
+            ["SDA","A4"],  
+            ["SCL","A5"]]), 
+            "PIN");
+       this.setOutput(true, "Number");
+      this.setColour(20);
+      this.setTooltip("");
+      this.setHelpUrl("");
+    }
+  };
+
+  Blockly.Blocks['gpio_spi'] = {
+    init: function() {
+      this.appendDummyInput()
+          .appendField("SPI")
+          .appendField(new Blockly.FieldDropdown([
+            ["CS","10"],  
+            ["MOSI","11"],  
+            ["MISO","12"],  
+            ["SCK","13"]]), 
+            "PIN");
+       this.setOutput(true, "Number");
+      this.setColour(20);
+      this.setTooltip("");
+      this.setHelpUrl("");
+    }
+  };
+
   Blockly.Blocks['gpio_analog_pin'] = {
     init: function() {
       this.appendDummyInput().

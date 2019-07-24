@@ -1,4 +1,4 @@
-# Arduino NANO board for KBIDE
+# Arduino-NANO board for KBIDE
 
 ### Block mode
 
