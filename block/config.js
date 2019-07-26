@@ -9,10 +9,10 @@ module.exports = {
             color : '230',
             icon : '/static/icons/icons8_electronics_96px.png',
             blocks : [
-                'gpio_digital',
-                'gpio_analog',
-                'gpio_i2c',
-                'gpio_spi',
+                // 'gpio_digital',
+                // 'gpio_analog',
+                // 'gpio_i2c',
+                // 'gpio_spi',
                 {
                     xml : 
                     `<block type="io_setpin">
@@ -97,7 +97,7 @@ module.exports = {
                         `<block type="time_delay">
                         <value name="delay">
                             <shadow type="math_number">
-                                <field name="NUM">500</field>
+                                <field name="NUM">1000</field>
                             </shadow>
                         </value>
                     </block>`
